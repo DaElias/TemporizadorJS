@@ -1,0 +1,88 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+header h1{
+    font-size: 5rem;
+    margin-top: 100px;
+    color: #ffffff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#temporizador{
+    font-size: 300px;
+    color: #ffffff;
+    border-bottom: 10px #ffffff solid;
+}
+
+#byCerchiaro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 50px;
+    width: 120px;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    bottom: 0px;
+    right:  0px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.botones{
+    margin-top: 10px  ;
+}
+
+.botones *{
+    margin: 200px 0px 50px 0px;
+}
+
+.botones button{
+    padding: 10px;
+    font-weight: bolder;
+    border: solid #3498db 5px;
+    background: #3498db;
+    transition: .5s;
+    color: #2f3640;
+    border: #192a56 solid 2px;
+}
+.botones button:hover{
+    box-shadow: 1px 1px 50px 10px;
+}
+
+.botones input{
+    width: 40%;
+    height: 34px;
+}
+
+
+
+
+.activate {
+    animation-name: activateAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background: blue;
+  }
+
+  @keyframes activateAnimation{
+    40%   {background: red;}
+    40%  {background: blue;}
+    60%   {background: red;}
+    70%  {background: blue;}
+  }
+  
+  
